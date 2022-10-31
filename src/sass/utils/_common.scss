@@ -1,10 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  // background-color:;
-  // font-family:;
-  // color: ;
-  // font-size:;
-  // letter-spacing:;
+  background-color: $background-white;
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
 }
 h1,
 h2,
