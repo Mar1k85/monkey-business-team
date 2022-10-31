@@ -1,14 +1,20 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  height: 72px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  
   background-color: $image-background-color;
-  font-family: 'Roboto';
-  font-style: normal;
-  align-items: center;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
+
+  &__container {
+    display: flex;
+    height: 72px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+
+    @media  (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
 
   &__nav-list {
     display: none;
@@ -52,13 +58,14 @@
   display: none;
 
   @include tablet {
-    display: inline-flex;
+    display: inline-block;
   }
 
-  width: 98px;
+  min-width: 98px;
   height: 32px;
   padding: 6px 18px;
   border: none;
+  cursor: pointer;
   background-color: $primary-accent-color;
   border-radius: 30px;
 
@@ -79,7 +86,7 @@
     }
 
     &:last-child {
-      margin-left: 30px;
+      margin-right: 30px;
     }
 
     @include desktop {
