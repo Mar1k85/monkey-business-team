@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    background-color: $image-background-color;
+    color: $text-color;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    @include nokia {
+        width: 320px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mobile {
+        width: 480px;
+    }
+
+    @include tablet {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include desktop {
+        width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.offerings {
+    padding-top: 410px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 604px;
+        padding-bottom: 100px;
+    }
+   
+    @include desktop {
+        padding-top: 280px;
+    }
+}
+
+.overlay {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include nokia {
+        max-width: 320px;
+        height: 1050px;
+        background-image: url(../images/offerings/applebg320.jpg);  
+        @include retina {
+            background-image: url(../images/offerings/applebg320@2x.jpg);
+        }
+    }
+
+    @include mobile {
+        max-width: 480px;
+        height: 1050px;
+        background-image: url(../images/offerings/applebg480.jpg);  
+        @include retina {
+            background-image: url(../images/offerings/applebg480@2x.jpg);
+        }
+
+    }
+
+    @include tablet {
+        max-width: 768px;
+        height: 1140px;
+        background-image: url(../images/offerings/applebg768.jpg);
+        @include retina {
+            background-image: url(../images/offerings/applebg768@2x.jpg);
+        }
+    }
+
+    @include desktop {
+        max-width: 1280px;
+        height: 824px;
+        background-image: url(../images/offerings/applebg1280.jpg);
+        @include retina {
+            background-image: url(../images/offerings/applebg1280@2x.jpg);
+        }
+    }
+}
+
+.offerings__wrapper {
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 400px;
+    }
+
+    @include desktop {
+        width: 50%;
+        margin-left: auto;
+    }
+}
+
+.offerings__block {
+    margin-bottom: 28px;
+
+    @include mobile {
+        margin-bottom: 33px;
+    }
+
+    @include tablet {
+        width: 526px;
+        margin-bottom: 40px;
+    }
+}
+
+.offerings__title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.18;
+    color: $text-color;
+
+    @include mobile {
+        margin-bottom: 33px;
+        font-size: 32px;
+    }
+
+    @include tablet {
+        margin-bottom: 20px;
+        font-size: 42px;
+        line-height: 1.17;
+    }
+
+    @include desktop {
+        line-height: 1.2;
+    }
+}
+
+.offerings__discription {
+    font-size: 14px;
+    line-height: 1.14;
+    color: $text-color;
+
+    @include mobile {
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    @include desktop {
+        line-height: 1.5;
+    }
+}
+
+.offerings__list {
+    margin-bottom: 28px;
+
+    @include mobile {
+        margin-bottom: 33px;
+    }
+
+    @include tablet {
+        display: flex;
+        gap: 116px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        gap: 67px;
+        margin-bottom: 40px;
+        margin-left: auto;
+    }
+}
+
+.offerings__item {
+
+    @include tablet {
+        width: 253px;
+    }
+
+    &:first-child::before {
+        @extend %offeringsMarkStyle;
+        background-image: url(../images/offerings/rocket.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:last-child::before {
+        @extend %offeringsMarkStyle;
+        background-image: url(../images/offerings/touch.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 7px 7px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+.offerings__name {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.17;
+    color: $text-color;
+
+    @include desktop {
+        line-height: 1.4;
+    }
+}
+
+.offerings__text {
+    font-size: 14px;
+    line-height: 1.14;   
+    color: $text-color;
+
+    @include desktop {
+        line-height: 1.5;
+    }
+}
+
+.button {
+    font-size: 13px;
+    line-height: 1.5;
+    color: $text-color;
+    border-radius: 30px;
+}
+
+.button--offerings {
+    background-color: $modal-form-background;
+    padding: 10px 22px;
+    border: 2px solid $secondary-accent-clor;
+    transition: border 250ms linear;
+    
+    &:hover, &:focus, &:active {
+        border: 2px solid $border-hover-color;
+    }
+}
+
+.offerings__link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $nav-text;
+    text-decoration: none;
+    margin-left: 24px;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        background-image: url(../images/offerings/iconarrow.svg);
+        background-size: contain;
+        vertical-align: middle;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
