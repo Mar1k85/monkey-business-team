@@ -1,0 +1,36 @@
+.backdrop {
+    width: 100px;
+    height: 100vh;
+    background: rgba(94, 99, 99, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal{
+    width: 320px;
+    height: 449px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background:rgba(255, 229, 80, 1);
+    position: absolute;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.close-button{
+    position: absolute;
+    right: 16px;
+    top:16px;
+    width: 32px;
+    height: 32px;
+    background: #FFFF;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.modal-title {
+    text-align: center;
+}
