@@ -44,10 +44,6 @@
 }
 
 .customer-description {
-    // font-size: 14px;
-    // font-weight: 400;
-    // line-height: 1.17;
-    // color: rgba(44, 44, 44, 1);
 
     @include nokia {
         margin-bottom: 20px;
@@ -58,19 +54,19 @@
     }
 
     @include mobile {
-      margin-bottom: 20px;
-      font-size: 14px;
+        margin-bottom: 20px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1.17;
         color: rgba(44, 44, 44, 1);
     }
 }
 
-.customer-list {
-    list-style: none;
+.customer__list {
+   @extend .list;
 }
 
-.customer-item {
+.customer__item {
     @include nokia {
         padding: 12px 8px 4px 8px;
         background-color: white;
@@ -94,7 +90,7 @@
     }
 }
 
-.customer-text {
+.customer__text {
 
     @include nokia {
         display: inline-block;
@@ -113,7 +109,7 @@
     }
 }
 
-.customer-icon {
+.customer__icon {
     @include nokia {
         margin-bottom: 28px;
     }
