@@ -28,6 +28,8 @@
   }
 
   @include tablet {
+    padding-top: 60px;
+    padding-bottom: 0px;
     padding-left: 32px;
     padding-right: 32px;
     background-image: url('../images/customers-say/img1-tab-1x.png');
@@ -41,6 +43,8 @@
   }
 
   @include desktop {
+    padding-top: 100px;
+    padding-bottom: 0px;
     padding-left: 16px;
     padding-right: 0px;
     background-image: url('../images/customers-say/img1-desk-1x.png');
@@ -70,7 +74,7 @@
   }
 
   @include tablet {
-    padding-top: 60px;
+    // padding-top: 60px;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.17;
@@ -78,7 +82,7 @@
   }
 
   @include desktop {
-    padding-top: 60px;
+    // padding-top: 60px;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.17;
@@ -116,7 +120,7 @@
   }
 }
 
-.customer__list {
+.feedback-container {
   @extend .list;
 
   @include tablet {
@@ -128,8 +132,8 @@
   }
 }
 
-.customer__item {
-  background-color: white;
+.feedback {
+  background-color: $background-white;
   border-radius: 0px 30px 30px 30px;
 
   @include nokia {
@@ -167,7 +171,7 @@
     width: 501px;
     height: 227px;
     margin-right: 0px;
-    padding: 12px 8px 4px 8px;
+    padding: 14px;
 
     &:not(:last-child) {
       margin-right: 12%;
@@ -210,7 +214,10 @@
   }
 }
 
-.customer__icon {
+.feedback-mark {
+  @extend .list;
+  display: flex;
+  gap: 4px;
   margin-bottom: 28px;
 }
 
@@ -229,7 +236,7 @@
   flex-direction: column;
 
   & {
-    border-right: 0.854167px solid #7eb101;
+    border-right: 0.854167px solid $secondary-accent-color;
     padding-left: 15px;
     padding-right: 15px;
   }
