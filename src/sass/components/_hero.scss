@@ -1,0 +1,13 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  &__title {
+    margin-bottom: 28px;
+  }
+  &__text {
+    margin-bottom: 28px;
+  }
+}
+.button.hero-btn {
+  background-color: $primary-accent-color;
+}
