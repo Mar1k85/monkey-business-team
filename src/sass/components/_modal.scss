@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: column;
 }
-.form-element {
+.form-element:not(last-child) {
     margin-bottom: 24px;
 }
 
