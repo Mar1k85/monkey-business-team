@@ -16,6 +16,9 @@
     position: absolute;
     padding: 32px 20px;
     border-radius: 30px;
+    @include tablet {
+        width: 458px;
+    }
 }
 /*.is-hidden {
     opacity: 0;
@@ -88,5 +91,5 @@ color: #2C2C2C;}
 
 .submit-btn:hover, 
 .submit-btn:focus {
-background-: rgba(126, 177, 1, 1);
+background-color: rgba(126, 177, 1, 1);
 }
