@@ -1,41 +1,5 @@
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
 button {
   cursor: pointer;
-}
-
-.container {
-  @include nokia {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @include mobile {
-    width: 480px;
-  }
-
-  @include tablet {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @include desktop {
-    width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
 .offerings {
@@ -55,11 +19,11 @@ button {
 .overlay {
   margin-left: auto;
   margin-right: auto;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 
   @include nokia {
-    max-width: 320px;
+    min-width: 320px;
     height: 1050px;
     background-image: url(../images/offerings/applebg320.jpg);
     @include retina {
