@@ -69,6 +69,9 @@
     padding-left: 12px;
     outline: none;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    @include tablet{
+    border: 1px solid  rgba(18, 18, 18, 0.12)
+    }
 }
 .form-element input:focus{
     border: 1px solid $secondary-accent-color;
