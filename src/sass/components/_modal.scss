@@ -21,11 +21,11 @@
         width: 458px;
     }
 }
-/*.is-hidden {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+} 
 .close-button{
     position: absolute;
     right: 16px;
@@ -104,7 +104,8 @@ line-height: 1.53;
 margin-top: 32px;
 color: $text-color;}
 
-.submit-btn:hover, 
+
+.submit-btn:hover,
 .submit-btn:focus {
 background-color:$primary-accent-color;
 }
