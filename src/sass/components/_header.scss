@@ -33,6 +33,7 @@
     font-size: 14px;
     line-height: 1.4;
     color: $nav-text;
+    transition: color 250ms linear;
 
     &:hover,
     &:focus {
@@ -85,4 +86,9 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
+  transition: background-color 250ms linear;
+
+  &:hover, &:focus {
+    background-color: $button-hover-color;
+  }
 }
