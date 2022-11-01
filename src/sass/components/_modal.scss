@@ -55,6 +55,9 @@
 .form-element:not(:last-child) {
     margin-bottom: 24px;
 }
+.form-element:last-child {
+    margin-bottom: 32px;
+}
 .form-element input{
     width: 100%;
     height: 48px;
