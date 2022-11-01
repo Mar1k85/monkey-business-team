@@ -1,6 +1,8 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $modal-form-background;
 
     @media screen and (max-width:767px) {
@@ -8,6 +10,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        max-width: 480px;
+        height: 619px;
 
 
 
@@ -28,6 +32,8 @@
         background-position: center;
         padding-top: 118px;
         padding-bottom: 100px;
+        height: 506px;
+        max-width: 768px;
 
 
         @media (min-device-pixel-ratio: 2),
@@ -46,6 +52,8 @@
         background-size: cover;
         padding-top: 100px;
         padding-bottom: 100px;
+        height: 395px;
+        max-width: 1280px;
 
 
         @media (min-device-pixel-ratio: 2),
@@ -180,7 +188,7 @@
         color: $form-text;
 
         @media screen and (min-width:480px) and (max-width:767px) {
-            width: 450px;
+            width: 430px;
         }
 
 
