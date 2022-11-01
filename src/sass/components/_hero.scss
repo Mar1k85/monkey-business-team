@@ -3,11 +3,22 @@
   padding-bottom: 50px;
   &__title {
     margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: inherit;
   }
   &__text {
     margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
   }
 }
 .button.hero-btn {
   background-color: $primary-accent-color;
+  border: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
 }
