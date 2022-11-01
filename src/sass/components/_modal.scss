@@ -71,5 +71,14 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.37;
 color: #2C2C2C;
-margin: 12px;
+margin-left: 12px;
+}
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 38px;
+    border-radius: 30px;
+    border: 2px solid rgba(126, 177, 1, 1);
+    background: #fff;
+    color: rgba(44, 44, 44, 1);
 }
