@@ -4,7 +4,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 479px) {
+  @include mobile {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -13,74 +13,130 @@
 //**FAVORITES-FONT**//
 
 .favorites__title {
+  margin-bottom: 20px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 
   color: $text-color;
+
+  @include tablet {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+  }
 }
 
 .favorites__info {
+  margin-bottom: 60px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
+  font-size: 14px;
+  line-height: 1.14;
   text-align: center;
 
   color: $text-color;
+
+  @include tablet {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+  }
 }
 
 //**FAVORITES-LIST**//
 
-.favorite-list {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20px 20px;
-  align-items: stretch;
+.cards-tablet {
+}
 
-  @media screen and (min-width: 480px) {
+.favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 30px;
+
+  @include mobile {
     grid-template-columns: auto;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     gap: 32px 32px;
     grid-template-columns: auto auto;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     grid-template-columns: auto auto auto;
   }
 }
 
 .favorites__photo {
+  width: 280px;
+  height: 282px;
+  overflow: hidden;
+
+  display: flex;
   align-content: center;
   align-items: center;
 
-  background: $image-background-color;
   border: 11px solid $main-color;
   border-radius: 140px;
 
-  @media screen and (max-width: 479px) {
+  @include tablet {
     border: 14px solid $main-color;
     border-radius: 167px;
+
+    width: 336px;
+    height: 338px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     border: 16px solid $main-color;
     border-radius: 197px;
+
+    width: 395px;
+    height: 397px;
+  }
+}
+
+.favorites__photo-img {
+  align-content: center;
+  align-items: center;
+  border-radius: 111px;
+  width: 223px;
+  height: 200px;
+
+  padding-left: 29px;
+
+  @include tablet {
+    width: 268px;
+    height: 250px;
+    border-radius: 133px;
+
+    padding-left: 36px;
+  }
+  @include desktop {
+    width: 315px;
+    height: 300px;
+    border-radius: 157px;
+
+    padding-left: 40px;
   }
 }
 
 .favorites__photo:hover,
 .favorites__photo:focus {
-  border: $primary-accent-color;
+  border-color: $primary-accent-color;
 }
+
+//**THREE-CARDS__MOBILE-NONE**//
 
 .favorite-list__tablet {
   display: none;
 
-  @media screen and (max-width: 479px) {
+  @include tablet {
     display: block;
   }
 }

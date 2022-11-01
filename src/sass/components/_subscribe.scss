@@ -1,4 +1,5 @@
 .subscribe {
+  margin-top: -43px;
   padding-bottom: 60px;
 
   @include tablet {
@@ -23,7 +24,7 @@
     margin-bottom: 17px;
   }
 
-  @media screen and(max-width: 767px) and(max-width: 1279px) {
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
     margin-left: auto;   
     margin-bottom: 20px;
   }
@@ -34,7 +35,7 @@
 }
 
 .subscribe__wrap {
-  @media screen and(max-width: 768px) and(max-width: 1279px) {
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
     padding-right: 48px;
   }
 }
