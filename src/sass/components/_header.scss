@@ -1,0 +1,98 @@
+.header {
+  
+  background-color: $image-background-color;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
+
+  &__container {
+    display: flex;
+    height: 72px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+
+    @media  (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__nav-list {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $nav-text;
+
+    &:hover,
+    &:focus {
+      color: $primary-accent-color;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.menu-btn {
+  @include tablet {
+    display: none;
+  }
+
+  border: none;
+  background-color: transparent;
+}
+
+.order-btn {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+
+  min-width: 98px;
+  height: 32px;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+  background-color: $primary-accent-color;
+  border-radius: 30px;
+
+  color: $text-color;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@include tablet {
+  .header__item {
+    &:not(:first-child) {
+      margin-left: 28px;
+    }
+
+    &:first-child {
+      margin-left: 191px;
+    }
+
+    &:last-child {
+      margin-right: 30px;
+    }
+
+    @include desktop {
+      &:first-child {
+        margin-left: 735px;
+      }
+    }
+  }
+}
