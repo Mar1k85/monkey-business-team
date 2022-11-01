@@ -4,13 +4,12 @@
     margin-left: auto;
     margin-right: auto;
     background-color: $modal-form-background;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    @media screen and (max-width:767px) {
+    @media screen and (min-width:320px) {
         background-image: url("../images/footer/footer-mob-320-1x.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        max-width: 480px;
         height: 619px;
 
 
@@ -23,15 +22,28 @@
         }
     }
 
+    @media screen and (min-width:480px) {
+            background-image: url("../images/footer/footer-tab-785-1x.png");
+             background-position: right;
+             max-width: 480px;
+             height: 619px;
+    
+    
+    
+             @media (min-device-pixel-ratio: 2),
+             (-webkit-min-device-pixel-ratio: 2),
+             (min-resolution: 192dpi),
+             (min-resolution: 2dppx) {
+                background-image: url("../images/footer/footer-tab-785@2x.png");
+             }
+         }
+
     @media screen and (min-width:768px) {
 
         background-image: url("../images/footer/footer-tab-785-1x.png");
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-top: 118px;
+        padding-top: 100px;
         padding-bottom: 100px;
+        background-position: center;
         height: 506px;
         max-width: 768px;
 
@@ -46,10 +58,6 @@
 
     @media screen and (min-width:1280px) {
         background-image: url("../images/footer/fruit_footer_desk-1211-1x.png");
-
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding-top: 100px;
         padding-bottom: 100px;
         height: 395px;
@@ -74,7 +82,6 @@
     display: inline-block;
 
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.14;
 
     &__id:not(:last-child) {
@@ -99,7 +106,6 @@
 
     @media screen and (min-width:1280px) {
         font-weight: 400;
-        font-size: 14px;
         line-height: 1.14;
 
     }
@@ -109,10 +115,13 @@
 .footer-top {
     display: flex;
     gap: 81px;
-    padding-bottom: 40px;
 
-    @media screen and (min-width:480px) and (max-width:767px) {
-        justify-content: center;
+    @media screen and (max-width: 1279px) {
+        padding-bottom: 40px;
+        }
+
+    @media screen and (min-width:480px) and (max-width: 767px) {
+        justify-content: space-evenly;
     }
 
     @media screen and (min-width:768px) {
@@ -137,32 +146,33 @@
 
 }
 
-
-.subscribe {
-    padding-bottom: 12px;
-}
-
 .footer-mailing {
     padding-bottom: 60px;
 
-    & .subscribe {
+    & .footer-subscribe-title {
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.51;
-
-        color: $text-color;
+        padding-bottom: 12px;
     }
 
     @media screen and (min-width:768px) {
         padding-bottom: 100px;
 
     }
+    @media screen and (min-width:1280px) {
+             padding-bottom: 80px;
+    
+         }
 }
 
 
 .footer-subscribe {
     display: inline-block;
     text-align: end;
+
+    & label {
+        margin-left: 0px;
+    }
 
     @media screen and (max-width:767px) {
         padding-bottom: 20px;
@@ -187,14 +197,12 @@
         font-size: 12px;
         line-height: 1.51;
         color: $form-text;
+        margin-bottom: 20px;
 
-        @media screen and (min-width:480px) and (max-width:767px) {
+
+
+        @media screen and (min-width:480px) {
             width: 430px;
-        }
-
-
-        @media screen and (max-width:767px) {
-            margin-bottom: 20px;
 
         }
 
@@ -234,7 +242,7 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 1.51;
-        color: $text-color;
+        
 
         &:hover,
         &:focus {
@@ -277,6 +285,7 @@
 
     @media screen and (max-width:767px) {
         padding-bottom: 40px;
+        justify-content: center;
     }
 
     @media screen and (min-width:768px) {
@@ -312,7 +321,6 @@
     font-size: 10px;
     line-height: 1.21;
 
-    color: $text-color;
     text-align: center;
 }
 
