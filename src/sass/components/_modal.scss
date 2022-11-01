@@ -51,9 +51,8 @@
 .form-element{
     display: flex;
     flex-direction: column;
-}
-.form-element:not(last-child) {
-    margin-bottom: 24px;
+
+    margin-top: 24px;
 }
 
 .form-element input{
