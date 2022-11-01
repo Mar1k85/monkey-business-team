@@ -74,14 +74,19 @@ color: #2C2C2C;
 margin-left: 12px;
 }
 .submit-btn {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 38px;
-    border-radius: 30px;
-    border: 2px solid rgba(126, 177, 1, 1);
-    background: #fff;
-    font-weight: 500;
+display: block;
+margin: 0 auto;
+padding: 10px 38px;
+border-radius: 30px;
+border: 2px solid rgba(126, 177, 1, 1);
+background: #fff;
+font-weight: 500;
 font-size: 13px;
 line-height: 1.53;
 
 color: #2C2C2C;}
+
+.btn-submit:hover, 
+.btn-submit:focus {
+background-color: rgba(126, 177, 1, 1);
+}
