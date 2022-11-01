@@ -1,7 +1,8 @@
 .customer-section {
-    padding-left: 20px;
-    padding-right: 20px;
+ 
     @include nokia {
+        padding-left: 20px;
+        padding-right: 20px;
         background-image: url("../images/customers-say/img1-mob-1x.png");
         background-size: 100% 100%;
         width: 100%;
@@ -13,14 +14,41 @@
     }
 
     @include mobile {
+        padding-left: 20px;
+        padding-right: 20px;
         background-image: url("../images/customers-say/img1-mob-1x.png");
         background-size: 100% 100%;
         width: 100%;
         height: 769px;
         
-
         @include retina {
             background-image: url("../images/customers-say/img1-mob-2x.png");
+        }
+    }
+
+    @include tablet {
+        padding-left: 32px;
+        padding-right: 32px;
+        background-image: url("../images/customers-say/img1-tab-1x.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 544px;
+        
+        @include retina {
+            background-image: url("../images/customers-say/img1-tab-2x.png");
+        }
+    }
+
+    @include desktop {
+        padding-left: 16px;
+        padding-right: 0px;
+        background-image: url("../images/customers-say/img1-desk-1x.png");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 647px;
+        
+        @include retina {
+            background-image: url("../images/customers-say/img2-desk-2x.png");
         }
     }
 }
@@ -41,52 +69,112 @@
         line-height: 1.17;
         margin-bottom: 20px;
     }
+
+    @include tablet {
+        padding-top: 60px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.17;
+        margin-bottom: 20px;
+    }
+
+    @include desktop {
+        padding-top: 60px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.17;
+        margin-bottom: 20px;
+    }
 }
 
 .customer-description {
 
     @include nokia {
-        margin-bottom: 20px;
+        margin-bottom: 32px;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.17;
-        color: rgba(44, 44, 44, 1);
     }
 
     @include mobile {
-        margin-bottom: 20px;
+        margin-bottom: 32px;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.17;
-        color: rgba(44, 44, 44, 1);
+    }
+
+    @include tablet {
+        margin-bottom: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.17;
+    }
+
+    @include desktop {
+        margin-bottom: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.17;
     }
 }
 
 .customer__list {
    @extend .list;
+
+   @include tablet {
+    display: flex;
+   }
+
+   @include desktop {
+    margin-right: 10%;
+   }
 }
 
 .customer__item {
+    background-color: white;
+    border-radius: 0px 30px 30px 30px;
+
     @include nokia {
+        width: 280px;
+        height: 247px;
         padding: 12px 8px 4px 8px;
-        background-color: white;
-        border-radius: 0px 30px 30px 30px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
     }
 
     @include mobile {
+        width: 280px;
+        height: 247px;
         padding: 12px 8px 4px 8px;
-        background-color: white;
-        border-radius: 0px 30px 30px 30px;
-    }
 
-    &:not(:last-child) {
-        @include nokia {
+        &:not(:last-child) {
             margin-bottom: 20px;
         }
-        
-        @include mobile {
-            margin-bottom: 20px;
-        } 
+    }
+
+    @include tablet {
+        width: 336px;
+        height: 244px;
+        margin-right: 32px;
+        padding: 12px 8px 4px 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @include desktop {
+        width: 501px;
+        height: 227px;
+        margin-right: 0px;
+        padding: 12px 8px 4px 8px;
+
+        &:not(:last-child) {
+            margin-right: 12%;
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -107,16 +195,27 @@
         font-size: 16px;
         line-height: 1.18;
     }
+
+    @include tablet {
+        display: inline-block;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+    }
+
+    @include desktop {
+        display: inline-block;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+    }
+
 }
 
 .customer__icon {
-    @include nokia {
-        margin-bottom: 28px;
-    }
-
-    @include mobile {
-        margin-bottom: 28px;
-    }
+    margin-bottom: 28px;
 }
 
 .customer-info {
@@ -144,14 +243,12 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 1.5;
-        color: rgba(44, 44, 44, 1);
     }
 
     &__description {
         font-size: 14px;
         font-weight: 400;
         line-height: 1.5;
-        color: rgba(44, 44, 44, 1);
     }
 }
  
