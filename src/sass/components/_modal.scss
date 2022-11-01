@@ -59,6 +59,11 @@
     border: none;
     border: 1px solid rgba(126, 177, 1, 1);
     padding-left: 12px;
+    outline: none;
+}
+.form-element input:focus{
+    border: 1px solid rgba(126, 177, 1, 1);
+
 }
 label{
 margin-bottom: 2px;
