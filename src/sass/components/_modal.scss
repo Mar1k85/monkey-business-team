@@ -21,6 +21,20 @@
         width: 458px;
     }
 }
+.form-error {
+font-weight: 500;
+font-size: 11px;
+line-height: 1.36;
+color: #FF705D;
+display: block;
+display: none;
+}
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid #FF705D;
+  }
+  input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+  }
 /*.is-hidden {
     opacity: 0;
     visibility: hidden;
