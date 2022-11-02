@@ -1,32 +1,30 @@
 .header {
-  
-  background-color: $image-background-color;
+  background-color: $background-white;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-
+  height: 72px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  
+  
 
   &__container {
     display: flex;
-    height: 72px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: space-between;
     align-items: center;
-
-    @media  (max-width: 768px) {
-      justify-content: space-between;
-    }
   }
 
   &__nav-list {
     display: none;
 
     @include tablet {
-      display: flex;
+      display: inline-flex;
       align-items: center;
     }
   }
 
   &__nav {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
   }
 
@@ -34,8 +32,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4;
     color: $nav-text;
+    transition: color 250ms linear;
 
     &:hover,
     &:focus {
@@ -45,6 +44,22 @@
   }
 }
 
+
+.header__logo {
+  display: block;
+  margin-right: auto;
+}
+
+.header__nav-list {
+  gap: 28px;
+
+  &:last-child {
+      margin-right: 30px;
+    }
+}
+
+
+
 .menu-btn {
   @include tablet {
     display: none;
@@ -52,7 +67,13 @@
 
   border: none;
   background-color: transparent;
+  transition: fill 250ms linear;
 }
+
+// .menu-btn:hover,
+// .menu-btn:focus {
+//   fill: $main-color;
+// }
 
 .order-btn {
   display: none;
@@ -61,38 +82,20 @@
     display: inline-block;
   }
 
-  min-width: 98px;
-  height: 32px;
+  background-color: $primary-accent-color;
   padding: 6px 18px;
   border: none;
   cursor: pointer;
-  background-color: $primary-accent-color;
+  
   border-radius: 30px;
 
   color: $text-color;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-}
+  transition: background-color 250ms linear;
 
-@include tablet {
-  .header__item {
-    &:not(:first-child) {
-      margin-left: 28px;
-    }
-
-    &:first-child {
-      margin-left: 191px;
-    }
-
-    &:last-child {
-      margin-right: 30px;
-    }
-
-    @include desktop {
-      &:first-child {
-        margin-left: 735px;
-      }
-    }
+  &:hover, &:focus {
+    background-color: $button-hover-color;
   }
 }
