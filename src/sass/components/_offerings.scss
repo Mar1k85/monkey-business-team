@@ -37,7 +37,14 @@ button {
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/offerings/rectangle320.jpg);
+  @include nokia {
+    min-width: 320px;
+    background-image: url(../images/offerings/applebg320.jpg);
+    @include retina {
+      background-image: url(../images/offerings/applebg320@2x.jpg);
+    }
+  }
+
 
   @include mobile {
     max-width: 480px;
