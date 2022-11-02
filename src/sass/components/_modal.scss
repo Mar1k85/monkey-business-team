@@ -28,12 +28,14 @@ line-height: 1.36;
 color: #FF705D;
 display: block;
 display: none;
+margin-bottom: 9px;
 }
 input:invalid:not(:placeholder-shown) {
     border: 1px solid #FF705D;
   }
-  input:invalid:not(:placeholder-shown) + .form__error {
+  input:invalid:not(:placeholder-shown) + .form-error {
     display: block;
+    margin-bottom: 0px;
   }
 /*.is-hidden {
     opacity: 0;
@@ -66,7 +68,7 @@ input:invalid:not(:placeholder-shown) {
     display: flex;
     flex-direction: column;
 
-    margin-top: 24px;
+    /*margin-top: 24px;*/
 }
 
 .form-element input{
@@ -77,7 +79,7 @@ input:invalid:not(:placeholder-shown) {
     font-weight: 400;
     line-height: 1.25;
     color:$text-color;
-   
+    margin-bottom: 24px;
     border: none;
     border: 1px solid $secondary-accent-color;
     padding-left: 12px;
