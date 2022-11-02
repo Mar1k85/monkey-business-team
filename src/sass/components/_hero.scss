@@ -44,13 +44,12 @@
 
 @media screen and (min-width: 768px) {
 
-
-    .container {
+    .hero {
         display: flex;
         min-width: 0;
     }
 
-    .hero {
+    .hero__text-wraper {
         padding: 60px 0 0 0;
         margin-bottom: 0px;
     }
