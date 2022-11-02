@@ -32,10 +32,11 @@ margin-bottom: 9px;
 }
 input:invalid:not(:placeholder-shown) {
     border: 1px solid #FF705D;
+    margin-bottom: 0;
   }
   input:invalid:not(:placeholder-shown) + .form-error {
     display: block;
-    margin-bottom: 0px;
+
   }
 /*.is-hidden {
     opacity: 0;
