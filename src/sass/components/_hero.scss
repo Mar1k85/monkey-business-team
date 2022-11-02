@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
     .hero {
-       padding: 60px 20px 50px 20px;
+       margin: 60px 0 50px 0;
     }
 
     .hero__header {
@@ -13,6 +13,9 @@
 
     .hero__text {
         margin-bottom: 28px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
     }
 
     .hero__button {
