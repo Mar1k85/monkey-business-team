@@ -29,6 +29,7 @@ color: #FF705D;
 display: block;
 display: none;
 margin-bottom: 9px;
+margin-left: 12px;
 }
 input:invalid:not(:placeholder-shown) {
     border: 1px solid #FF705D;
@@ -38,10 +39,14 @@ input:invalid:not(:placeholder-shown) {
     display: block;
 
   }
-  input:invalid:not(:placeholder-shown) + .submit-btn {
-    border: 1px solid #FF705D;
+  .warn-text{
+font-weight: 500;
+font-size: 11px;
+line-height: 1.36;
+color: #FF705D;
 
   }
+
 /*.is-hidden {
     opacity: 0;
     visibility: hidden;
