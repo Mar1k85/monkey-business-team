@@ -38,6 +38,10 @@ input:invalid:not(:placeholder-shown) {
     display: block;
 
   }
+  .submit-btn:invalid:not(:placeholder-shown) + .form-error {
+    border: 1px solid #FF705D;
+
+  }
 /*.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -118,7 +122,6 @@ background: $modal-form-background;
 font-weight: 500;
 font-size: 13px;
 line-height: 1.53;
-margin-top: 32px;
 color: $text-color;}
 
 
