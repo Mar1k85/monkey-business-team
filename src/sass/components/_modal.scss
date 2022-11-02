@@ -21,12 +21,12 @@
         width: 458px;
     }
 }
-.is-hidden {
+/*.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} 
-.close-button{
+} */
+.modal-close-button{
     position: absolute;
     right: 16px;
     top:16px;
@@ -83,7 +83,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.25;
 }
-label{
+.modal-label{
 margin-bottom: 2px;
 font-weight: 500;
 font-size: 16px;
