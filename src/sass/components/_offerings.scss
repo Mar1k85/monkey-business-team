@@ -3,8 +3,12 @@ button {
 }
 
 .offerings {
-  padding-top: 410px;
+  padding-top: 41px;
   padding-bottom: 60px;
+
+  @include mobile {
+    padding-top: 410px;
+  }
 
   @include tablet {
     padding-top: 604px;
@@ -16,12 +20,23 @@ button {
   }
 }
 
+.offerings__img {
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
 .overlay {
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-
   @include nokia {
     min-width: 320px;
     background-image: url(../images/offerings/applebg320.jpg);
@@ -29,6 +44,7 @@ button {
       background-image: url(../images/offerings/applebg320@2x.jpg);
     }
   }
+
 
   @include mobile {
     max-width: 480px;
