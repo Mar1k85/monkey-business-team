@@ -38,7 +38,7 @@ input:invalid:not(:placeholder-shown) {
     display: block;
 
   }
-  .submit-btn:invalid:not(:placeholder-shown) + .form-error {
+  input:invalid:not(:placeholder-shown) + .submit-btn {
     border: 1px solid #FF705D;
 
   }
