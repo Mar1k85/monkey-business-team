@@ -166,3 +166,6 @@ input:invalid:not(:placeholder-shown) ~.submit-btn {
 border:2px solid #FF705D;
 background-color: $background-white;
 }
+.required-text{
+  display: none;
+}
