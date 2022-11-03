@@ -115,10 +115,10 @@ margin-left: 4px;
 .form-element input::placeholder-shown {
   border: 1px solid $secondary-accent-color;
 }
-/*.form-element input:focus{
+.form-element input:focus{
     border: 1px solid $secondary-accent-color;
 
-}*/
+}
 input::placeholder {
 color:$modal-form-text;
 font-weight: 400;
