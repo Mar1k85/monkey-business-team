@@ -6,10 +6,10 @@
   top: 0;
   left: 0;
   position: fixed;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(70%);
+  transform: translate(-50%, -50%) scale(50%);
 }
 .modal {
   width: 320px;
@@ -21,7 +21,7 @@
   position: absolute;
   padding: 32px 20px;
   border-radius: 30px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     width: 458px;
