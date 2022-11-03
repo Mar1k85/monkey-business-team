@@ -172,6 +172,12 @@
     display: inline-block;
     text-align: end;
 
+    & ::placeholder{
+    font-size: 12px;
+    line-height: 1.5;
+    color: $form-text;
+    }
+
     & label {
         margin-left: 0px;
     }
@@ -193,12 +199,6 @@
         border-radius: 30px;
         height: 42px;
         padding: 12px;
-
-        font-style: normal;
-        font-family: inherit;
-        font-size: 12px;
-        line-height: 1.50;
-        color: $form-text;
         margin-bottom: 20px;
 
         transition: border  250ms linear;
