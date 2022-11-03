@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     @media screen and (min-width:320px) {
         background-image: url("../images/footer/footer-mob-320-1x.png");
@@ -90,6 +91,7 @@
 
     &__id a {
         color: $text-color;
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {
@@ -192,13 +194,14 @@
         height: 42px;
         padding: 12px;
 
-
-        font-weight: 400;
+        font-style: normal;
+        font-family: inherit;
         font-size: 12px;
-        line-height: 1.51;
+        line-height: 1.50;
         color: $form-text;
         margin-bottom: 20px;
 
+        transition: border  250ms linear;
 
 
         @media screen and (min-width:480px) {
@@ -224,7 +227,7 @@
 
 
         &:invalid {
-            border: 0.854167px solid $modal-alert-color;
+            border: 0.854167px solid #FF705D;
             background: $modal-form-background;
         }
 
@@ -242,7 +245,7 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 1.51;
-        
+        transition: background 250ms linear;
 
         &:hover,
         &:focus {
@@ -270,6 +273,8 @@
         text-decoration-line: underline;
 
         color: $secondary-accent-color;
+
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {
@@ -305,6 +310,8 @@
         text-decoration-line: underline;
 
         color: $secondary-accent-color;
+
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {
