@@ -169,6 +169,6 @@ background-color: $background-white;
 .required-text{
   display: none;
 }
-.input:required ~.required-text {
-  display: block;
+.input:required {
+  border:2px solid #FF705D;
 }
