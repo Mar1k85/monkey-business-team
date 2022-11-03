@@ -42,13 +42,11 @@ input:invalid:not(:placeholder-shown) {
     display: flex;
 
   }
-  .form-element input:required {
-    border: 1px solid #FF705D;
-  }
-  .form-element input:required ~.submit-btn {
+  
+  /*.form-element input:required ~.submit-btn {
     border: 1px solid #FF705D;
     background-color: $background-white;
-  }
+  }*/
 
   .warn-text{
 font-weight: 500;
