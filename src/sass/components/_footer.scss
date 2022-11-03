@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     @media screen and (min-width:320px) {
         background-image: url("../images/footer/footer-mob-320-1x.png");
@@ -85,11 +86,12 @@
     line-height: 1.14;
 
     &__id:not(:last-child) {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     &__id a {
         color: $text-color;
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {
@@ -117,7 +119,7 @@
     gap: 81px;
 
     @media screen and (max-width: 1279px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         }
 
     @media screen and (min-width:480px) and (max-width: 767px) {
@@ -147,20 +149,20 @@
 }
 
 .footer-mailing {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 
     & .footer-subscribe-title {
         font-weight: 500;
         line-height: 1.51;
-        padding-bottom: 12px;
+        margin-bottom: 12px;
     }
 
     @media screen and (min-width:768px) {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
 
     }
     @media screen and (min-width:1280px) {
-             padding-bottom: 80px;
+             margin-bottom: 80px;
     
          }
 }
@@ -175,14 +177,14 @@
     }
 
     @media screen and (max-width:767px) {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
 
     }
 
     @media screen and (min-width:768px) {
         display: flex;
         gap: 13px;
-        padding-bottom: 12px;
+        margin-bottom: 12px;
 
     }
 
@@ -192,13 +194,14 @@
         height: 42px;
         padding: 12px;
 
-
-        font-weight: 400;
+        font-style: normal;
+        font-family: inherit;
         font-size: 12px;
-        line-height: 1.51;
+        line-height: 1.50;
         color: $form-text;
         margin-bottom: 20px;
 
+        transition: border  250ms linear;
 
 
         @media screen and (min-width:480px) {
@@ -224,7 +227,7 @@
 
 
         &:invalid {
-            border: 0.854167px solid $modal-alert-color;
+            border: 0.854167px solid #FF705D;
             background: $modal-form-background;
         }
 
@@ -242,7 +245,7 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 1.51;
-        
+        transition: background 250ms linear;
 
         &:hover,
         &:focus {
@@ -271,6 +274,8 @@
 
         color: $secondary-accent-color;
 
+        transition: color 250ms linear;
+
         &:hover,
         &:focus {
             color: $shadow-fruit;
@@ -284,7 +289,7 @@
     gap: 32px;
 
     @media screen and (max-width:767px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         justify-content: center;
     }
 
@@ -305,6 +310,8 @@
         text-decoration-line: underline;
 
         color: $secondary-accent-color;
+
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {
