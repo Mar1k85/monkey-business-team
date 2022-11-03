@@ -23,45 +23,12 @@
         width: 458px;
     }
 }
-.form-error {
-font-weight: 500;
-font-size: 11px;
-line-height: 1.36;
-color: #FF705D;
-display: flex;
-display: none;
-margin-bottom: 9px;
-margin-left: 12px;
-align-items: center;
-}
-input:invalid:not(:placeholder-shown) {
-    border: 1px solid #FF705D;
-    margin-bottom: 0;
-  }
-  input:invalid:not(:placeholder-shown) + .form-error {
-    display: flex;
 
-  }
-  
-  .input:required ~.submit-btn {
-    border: 1px solid #FF705D;
-    background-color: $background-white;
-  }
-
-  .warn-text{
-font-weight: 500;
-font-size: 11px;
-line-height: 1.36;
-color: #FF705D;
-margin-left: 4px;
-
-  }
-
-.is-hidden {
+/*.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} 
+} */
 .modal-close-button{
     position: absolute;
     right: 16px;
@@ -77,6 +44,14 @@ margin-left: 4px;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
 }
+.modal-label{
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.37;
+    color:$text-color;
+    margin-left: 12px;
+    }
 .modal-title {
     text-align: center;
     font-weight: 700;
@@ -89,6 +64,13 @@ margin-left: 4px;
     display: flex;
     flex-direction: column;
 }
+input::placeholder {
+    color:$modal-form-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    
+    }
 
 .form-element input{
     width: 100%;
@@ -116,21 +98,42 @@ input:not(:placeholder-shown) {
     border: 1px solid $secondary-accent-color;
 
 }
-input::placeholder {
-color:$modal-form-text;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
 
-}
-.modal-label{
-margin-bottom: 2px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.37;
-color:$text-color;
-margin-left: 12px;
-}
+
+.form-error {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.36;
+    color: #FF705D;
+    display: flex;
+    display: none;
+    margin-bottom: 9px;
+    margin-left: 12px;
+    align-items: center;
+    }
+    input:invalid:not(:placeholder-shown) {
+        border: 1px solid #FF705D;
+        margin-bottom: 0;
+      }
+      input:invalid:not(:placeholder-shown) + .form-error {
+        display: flex;
+    
+      }
+      
+      .input:required ~.submit-btn {
+        border: 1px solid #FF705D;
+        background-color: $background-white;
+      }
+    
+      .warn-text{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.36;
+    color: #FF705D;
+    margin-left: 4px;
+    
+      }
+
 .submit-btn {
 display: block;
 margin: 0 auto;
