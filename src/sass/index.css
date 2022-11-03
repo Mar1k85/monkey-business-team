@@ -175,7 +175,7 @@ ul {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
-    color: #2C2C2C;
+    color: #2c2c2c;
   }
   .hero__text {
     margin-bottom: 28px;
@@ -197,7 +197,7 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero__button:active {
-    background-color: #B5FF00;
+    background-color: #b5ff00;
   }
   .hero__slider-wrapper {
     display: none;
@@ -222,6 +222,10 @@ ul {
   .hero__text {
     margin-bottom: 40px;
     width: 335px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2c2c2c;
   }
   .hero__button {
     min-width: 98px;
@@ -237,13 +241,13 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero__button:active {
-    background-color: #B5FF00;
+    background-color: #b5ff00;
   }
   .hero__slider-wrapper {
     position: absolute;
     display: flex;
     width: 336px;
-    top: 114px;
+    top: 144px;
     right: 42px;
     justify-content: center;
     align-items: center;
@@ -269,14 +273,12 @@ ul {
     right: -12px;
     background: url(/src/images/hero/forward-arrow.svg) 50% no-repeat;
     background-size: 11px 20px;
-    fill: #2C2C2C;
     background-color: #ffffff;
   }
   .hero__slider .slick-arrow.slick-next {
     left: -12px;
     background: url(/src/images/hero/back-arrow.svg) 50% no-repeat;
     background-size: 11px 20px;
-    fill: #2C2C2C;
     background-color: #ffffff;
   }
   .hero__slider img {
@@ -284,7 +286,7 @@ ul {
     height: 292px;
   }
   .hero__slider__item .slick-slide {
-    border: 14px solid #FFE550;
+    border: 14px solid #ffe550;
     border-radius: 50%;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -295,7 +297,7 @@ ul {
     overflow: hidden;
     height: 320px;
     width: 320px;
-    border: 14px solid #FFE550;
+    border: 14px solid #ffe550;
     border-radius: 50%;
   }
 }
@@ -337,7 +339,7 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero__button:hover, .hero__button:focus {
-    background-color: #B5FF00;
+    background-color: #b5ff00;
   }
   .hero__slider-wrapper {
     position: static;
@@ -369,6 +371,7 @@ ul {
     background: url(/src/images/hero/forward-arrow.svg) 50% no-repeat;
     background-size: 16px 29px;
     background-color: #ffffff;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero__slider .slick-arrow.slick-prev:hover, .hero__slider .slick-arrow.slick-prev:focus {
     background: url(/src/images/hero/forward-arrow-hover.svg) 50% no-repeat;
@@ -380,6 +383,7 @@ ul {
     background: url(/src/images/hero/back-arrow.svg) 50% no-repeat;
     background-size: 16px 29px;
     background-color: #ffffff;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero__slider .slick-arrow.slick-next:hover, .hero__slider .slick-arrow.slick-next:focus {
     background: url(/src/images/hero/back-arrow-hover.svg) 50% no-repeat;
@@ -390,7 +394,7 @@ ul {
     overflow: hidden;
     height: 580px;
     width: 580px;
-    border: 26px solid #FFE550;
+    border: 26px solid #ffe550;
     border-radius: 50%;
   }
 }
@@ -1443,11 +1447,11 @@ button {
   top: 0;
   left: 0;
   position: fixed;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(70%);
+  transform: translate(-50%, -50%) scale(50%);
 }
 
 .modal {
@@ -1460,7 +1464,7 @@ button {
   position: absolute;
   padding: 32px 20px;
   border-radius: 30px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal {
