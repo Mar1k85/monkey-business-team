@@ -95,28 +95,34 @@
 
         transition: color 250ms linear, background 250ms linear;
         
-        &::after{
-            content: "";
-            background: $primary-accent-color;
-            width: 0px;
-            transition: width 350ms linear;
-        }
-
-        &:hover,
-        &:focus {
-            color: $primary-accent-color;
+        @media screen and (min-width:768px) {
+                     padding-top: 20px;
+                     padding-bottom: 20px;
 
             &::after {
-                    content: "";
-                    position: absolute;
-                    height: 1px;
-                    background: $primary-accent-color;
-                    top: 60%;
-                    width: 100%;
-                    left: 0;
-                }
-         
-        }
+                content: "";
+                background: $primary-accent-color;
+                 width: 0px;
+                transition: width 350ms linear;
+                        }
+                    
+            &:hover,
+            &:focus {
+            color: $primary-accent-color;
+                    
+            &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: $primary-accent-color;
+            top: 60%;
+            width: 100%;
+            left: 0;
+                            }
+                    
+                        }
+                 }
+       
     }
 
     @media screen and (min-width:768px) {
@@ -162,7 +168,7 @@
     .footer-top-decktop {
         display: inline-flex;
         align-items: flex-start;
-        gap: 218px;
+        gap: 242px;
     }
 
 }
