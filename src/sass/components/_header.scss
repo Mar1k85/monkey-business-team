@@ -5,12 +5,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__nav-list {
     display: none;
@@ -33,6 +31,9 @@
     line-height: 1.4;
     color: $nav-text;
     transition: color 250ms linear;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    transition: color 250ms linear, text-decoration 250ms linear;
 
     &:hover,
     &:focus {
@@ -41,6 +42,8 @@
     }
   }
 }
+
+
 .header__logo {
   display: block;
   margin-right: auto;
