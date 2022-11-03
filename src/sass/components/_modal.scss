@@ -141,7 +141,6 @@ transition: background-color 250ms linear;}
 .submit-btn:focus {
 background-color:$primary-accent-color;
 }
-.form-error + .submit-btn:hover,
-.submit-btn:focus {
-background-color:red;
+.form-error + .submit-btn {
+border:red;
 }
