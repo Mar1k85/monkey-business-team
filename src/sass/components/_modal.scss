@@ -172,3 +172,6 @@ background-color: $background-white;
 input:required:placeholder-shown {
   border:2px solid #FF705D;
 }
+.input:required +.required-text {
+  display: inline;
+}
