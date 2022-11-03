@@ -11,10 +11,8 @@
 
     @media screen and (min-width:320px) {
         background-image: url("../images/footer/footer-mob-320-1x.png");
-        height: 619px;
-
-
-
+   
+        
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -27,7 +25,6 @@
             background-image: url("../images/footer/footer-tab-785-1x.png");
              background-position: right;
              max-width: 480px;
-             height: 619px;
     
     
     
@@ -45,7 +42,6 @@
         padding-top: 100px;
         padding-bottom: 100px;
         background-position: center;
-        height: 506px;
         max-width: 768px;
 
 
@@ -61,7 +57,6 @@
         background-image: url("../images/footer/fruit_footer_desk-1211-1x.png");
         padding-top: 100px;
         padding-bottom: 100px;
-        height: 395px;
         max-width: 1280px;
 
 
