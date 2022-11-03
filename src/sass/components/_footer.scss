@@ -91,7 +91,7 @@
 
     &__id a {
         color: $text-color;
-        transition: color 250ms linear;
+        transition: color 250ms linear, text-decoration 250ms linear,;
 
         &:hover,
         &:focus {
