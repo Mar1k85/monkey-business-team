@@ -42,11 +42,12 @@ input:invalid:not(:placeholder-shown) {
     display: flex;
 
   }
-  .form-input:required {
+  .form-element input:required {
     border: 1px solid #FF705D;
   }
-  .form-input:required .required-text {
-    color: aqua;
+  .form-element input:required ~.submit-btn {
+    border: 1px solid #FF705D;
+    background-color: $background-white;
   }
 
   .warn-text{
@@ -110,6 +111,9 @@ margin-left: 4px;
     @include tablet{
     border: 1px solid  rgba(18, 18, 18, 0.12)
     }
+}
+.form-element input::placeholder-shown {
+  border: 1px solid $secondary-accent-color;
 }
 .form-element input:focus{
     border: 1px solid $secondary-accent-color;
