@@ -169,6 +169,6 @@ background-color: $background-white;
 .required-text{
   display: none;
 }
-.input:required {
+.form-element input:required :placeholder-shown {
   border:2px solid #FF705D;
 }
