@@ -42,6 +42,12 @@ input:invalid:not(:placeholder-shown) {
     display: flex;
 
   }
+  .form-input:required {
+    border: 1px solid #FF705D;
+  }
+  .form-input:required .required-text {
+    color: aqua;
+  }
 
   .warn-text{
 font-weight: 500;
