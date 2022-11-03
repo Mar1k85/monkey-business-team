@@ -142,5 +142,6 @@ transition: background-color 250ms linear;}
 background-color:$primary-accent-color;
 }
 input:invalid:not(:placeholder-shown) ~.submit-btn {
-border:2px solid red;
+border:2px solid #FF705D;
+background-color: $background-white;
 }
