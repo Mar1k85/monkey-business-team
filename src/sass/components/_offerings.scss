@@ -1,7 +1,3 @@
-button {
-  cursor: pointer;
-}
-
 .offerings {
   padding-top: 41px;
   padding-bottom: 60px;
@@ -16,7 +12,7 @@ button {
   }
 
   @include desktop {
-    padding-top: 280px;
+    padding-top: 260px;
   }
 }
 
@@ -85,6 +81,10 @@ button {
     width: 526px;
     margin-bottom: 40px;
   }
+
+  @include desktop {
+    margin-bottom: 38px;
+  }
 }
 
 .offerings__title {
@@ -105,14 +105,13 @@ button {
   }
 
   @include desktop {
-    line-height: 1.2;
+    line-height: 1.19;
   }
 }
 
 .offerings__discription {
   font-size: 14px;
   line-height: 1.14;
-  color: $text-color;
 
   @include mobile {
     font-size: 16px;
@@ -139,7 +138,6 @@ button {
 
   @include desktop {
     gap: 67px;
-    margin-bottom: 40px;
     margin-left: auto;
   }
 }
@@ -175,35 +173,32 @@ button {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.17;
-  color: $text-color;
 
   @include desktop {
-    line-height: 1.4;
+    line-height: 1.38;
   }
 }
 
 .offerings__text {
-  font-size: 14px;
   line-height: 1.14;
-  color: $text-color;
 
   @include desktop {
     line-height: 1.5;
   }
 }
 
-.button {
-  font-size: 13px;
-  line-height: 1.5;
-  color: $text-color;
-  border-radius: 30px;
-}
-
-.button--offerings {
+.offerings__button {
+  display: inline-block;
+  font-family: inherit;
   background-color: $modal-form-background;
   padding: 10px 22px;
   border: 2px solid $secondary-accent-color;
   transition: border 250ms linear;
+  font-size: 13px;
+  line-height: 1.2;
+  color: $text-color;
+  border-radius: 30px;
+  cursor: pointer;
 
   &:hover,
   &:focus,
@@ -214,7 +209,7 @@ button {
 
 .offerings__link {
   display: inline-block;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.5;
   color: $nav-text;
   text-decoration: none;
