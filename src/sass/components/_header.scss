@@ -5,14 +5,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   
-  
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__nav-list {
     display: none;
@@ -35,11 +31,31 @@
     line-height: 1.4;
     color: $nav-text;
     transition: color 250ms linear;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    transition: color 250ms linear, background 250ms linear;
+    position: relative;
+
+    &::after {
+        content: "";
+        background: $primary-accent-color;
+        width: 0px;
+        transition: width 350ms linear;
+    }
 
     &:hover,
     &:focus {
       color: $primary-accent-color;
-      text-decoration-line: underline;
+      
+      &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background: $primary-accent-color;
+          top: 60%;
+          width: 100%;
+          left: 0;
+        }
     }
   }
 }
@@ -70,10 +86,6 @@
   transition: fill 250ms linear;
 }
 
-// .menu-btn:hover,
-// .menu-btn:focus {
-//   fill: $main-color;
-// }
 
 .order-btn {
   display: none;

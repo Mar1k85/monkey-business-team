@@ -7,13 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     @media screen and (min-width:320px) {
         background-image: url("../images/footer/footer-mob-320-1x.png");
-        height: 619px;
-
-
-
+   
+        
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -26,7 +25,6 @@
             background-image: url("../images/footer/footer-tab-785-1x.png");
              background-position: right;
              max-width: 480px;
-             height: 619px;
     
     
     
@@ -44,7 +42,6 @@
         padding-top: 100px;
         padding-bottom: 100px;
         background-position: center;
-        height: 506px;
         max-width: 768px;
 
 
@@ -60,7 +57,6 @@
         background-image: url("../images/footer/fruit_footer_desk-1211-1x.png");
         padding-top: 100px;
         padding-bottom: 100px;
-        height: 395px;
         max-width: 1280px;
 
 
@@ -85,17 +81,48 @@
     line-height: 1.14;
 
     &__id:not(:last-child) {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
+
     }
 
     &__id a {
+        @media screen and (min-width:768px) {
+        padding-top: 20px;
+        padding-bottom: 20px;   
+            }
         color: $text-color;
+        position: relative;
 
-        &:hover,
-        &:focus {
+        transition: color 250ms linear, background 250ms linear;
+        
+        @media screen and (min-width:768px) {
+                     padding-top: 20px;
+                     padding-bottom: 20px;
+
+            &::after {
+                content: "";
+                background: $primary-accent-color;
+                 width: 0px;
+                transition: width 350ms linear;
+                        }
+                    
+            &:hover,
+            &:focus {
             color: $primary-accent-color;
-            text-decoration: underline;
-        }
+                    
+            &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: $primary-accent-color;
+            top: 60%;
+            width: 100%;
+            left: 0;
+                            }
+                    
+                        }
+                 }
+       
     }
 
     @media screen and (min-width:768px) {
@@ -117,7 +144,7 @@
     gap: 81px;
 
     @media screen and (max-width: 1279px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         }
 
     @media screen and (min-width:480px) and (max-width: 767px) {
@@ -141,26 +168,26 @@
     .footer-top-decktop {
         display: inline-flex;
         align-items: flex-start;
-        gap: 218px;
+        gap: 242px;
     }
 
 }
 
 .footer-mailing {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 
     & .footer-subscribe-title {
         font-weight: 500;
         line-height: 1.51;
-        padding-bottom: 12px;
+        margin-bottom: 12px;
     }
 
     @media screen and (min-width:768px) {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
 
     }
     @media screen and (min-width:1280px) {
-             padding-bottom: 80px;
+             margin-bottom: 80px;
     
          }
 }
@@ -170,19 +197,25 @@
     display: inline-block;
     text-align: end;
 
+    & ::placeholder{
+    font-size: 12px;
+    line-height: 1.5;
+    color: $form-text;
+    }
+
     & label {
         margin-left: 0px;
     }
 
     @media screen and (max-width:767px) {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
 
     }
 
     @media screen and (min-width:768px) {
         display: flex;
         gap: 13px;
-        padding-bottom: 12px;
+        margin-bottom: 12px;
 
     }
 
@@ -191,14 +224,9 @@
         border-radius: 30px;
         height: 42px;
         padding: 12px;
-
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.51;
-        color: $form-text;
         margin-bottom: 20px;
 
+        transition: border  250ms linear;
 
 
         @media screen and (min-width:480px) {
@@ -224,7 +252,7 @@
 
 
         &:invalid {
-            border: 0.854167px solid $modal-alert-color;
+            border: 0.854167px solid #FF705D;
             background: $modal-form-background;
         }
 
@@ -242,7 +270,7 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 1.51;
-        
+        transition: background 250ms linear;
 
         &:hover,
         &:focus {
@@ -271,6 +299,8 @@
 
         color: $secondary-accent-color;
 
+        transition: color 250ms linear;
+
         &:hover,
         &:focus {
             color: $shadow-fruit;
@@ -284,7 +314,7 @@
     gap: 32px;
 
     @media screen and (max-width:767px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         justify-content: center;
     }
 
@@ -305,6 +335,8 @@
         text-decoration-line: underline;
 
         color: $secondary-accent-color;
+
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {

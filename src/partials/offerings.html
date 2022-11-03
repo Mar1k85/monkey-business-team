@@ -1,5 +1,14 @@
-<section class="offerings overlay">
+<section id="offerings" class="offerings overlay">
   <div class="container">
+    <img
+      class="offerings__img"
+      srcset="
+        ./images/offerings/apple.png    1x,
+        ./images/offerings/apple@2x.png 2x
+      "
+      src="./images/offerings/apple.png"
+      alt="apple"
+    />
     <div class="offerings__wrapper">
       <div class="offerings__block">
         <h2 class="offerings__title">What’s Special About Our Offerings</h2>
@@ -25,7 +34,7 @@
           </p>
         </li>
       </ul>
-      <button class="button button--offerings" type="button" onclick="toform()">
+      <button class="button button--offerings" data-modal-pone type="button">
         Order Now
       </button>
       <a class="offerings__link" href="#">Read More</a>
