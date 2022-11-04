@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%) scale(50%);
 }
 .modal {
-  width: 320px;
+  width: 300px;
   height: 449px;
   left: 50%;
   top: 50%;
@@ -41,14 +41,15 @@
   width: 32px;
   height: 32px;
   background: $modal-form-background;
-  color: $text-color;
+  
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   border: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
-  transition: background-color 250ms linear;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: border 250ms linear;
+  
 }
 .modal-close-button:hover,
 .modal-close-button:focus{
@@ -96,8 +97,10 @@ input::placeholder {
   padding-left: 12px;
   outline: none;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  
   @include tablet {
     border: 1px solid rgba(18, 18, 18, 0.12);
+
   }
 }
 input:not(:placeholder-shown) {
