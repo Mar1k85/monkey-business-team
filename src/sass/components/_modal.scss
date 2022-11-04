@@ -146,6 +146,10 @@ input:invalid:not(:placeholder-shown) + .form-error {
   line-height: 1.36;
   color: $form-invalid;
   margin-left: 4px;
+  @include tablet{
+    font-size: 13px;
+    line-height: 1.4;
+  }
 }
 .submit-btn {
   display: block;
@@ -169,7 +173,7 @@ background-color: $background-white;
 
 input:required:placeholder-shown ~.submit-btn:hover,
 .submit-btn:focus{
-  border: 1px solid $form-invalid;
+  border: 2px solid $form-invalid;
   background-color: $background-white;
 
 }
