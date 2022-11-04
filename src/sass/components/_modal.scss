@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%) scale(50%);
 }
 .modal {
-  width: 320px;
+  width: 300px;
   height: 449px;
   left: 50%;
   top: 50%;
@@ -52,6 +52,7 @@
 }
 .modal-close-button:hover,
 .modal-close-button:focus{
+  border: none;
   border:1px solid $primary-accent-color;
 }
 
