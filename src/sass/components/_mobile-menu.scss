@@ -15,6 +15,7 @@
     opacity: 1;
     pointer-events: all;
   }
+  @extend %transition;
 }
 
 .mobile-menu__link {

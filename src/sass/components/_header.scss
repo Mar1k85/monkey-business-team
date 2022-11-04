@@ -30,6 +30,11 @@
     font-size: 14px;
     line-height: 1.4;
     color: $nav-text;
+
+    @media  screen and (min-width: 1280px) {
+      color: $text-color;
+    }
+
     transition: color 250ms linear;
     padding-top: 28px;
     padding-bottom: 28px;
