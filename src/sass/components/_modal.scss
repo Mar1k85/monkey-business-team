@@ -48,6 +48,7 @@
   align-items: center;
   border: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+  transition: background-color 250ms linear;
 }
 .modal-close-button:hover,
 .modal-close-button:focus{
@@ -99,14 +100,13 @@ input::placeholder {
     border: 1px solid rgba(18, 18, 18, 0.12);
   }
 }
-input:not(:placeholder-shown) {
+/*input:not(:placeholder-shown) {
   border: 1px solid $secondary-accent-color;
-}
+}*/
 .form-element input:hover,
 .form-element input:focus {
 
   border: 1px solid $secondary-accent-color;
-
   border: none;
   border: 1px solid $secondary-accent-color;
   padding-left: 12px;
@@ -156,6 +156,7 @@ input:invalid:not(:placeholder-shown) + .form-error {
   line-height: 1.53;
   color: $text-color;
   transition: background-color 250ms linear;
+  cursor: pointer;
 }
 
 input:invalid:not(:placeholder-shown) ~.submit-btn {
