@@ -49,6 +49,11 @@
   border: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
 }
+.modal-close-button:hover,
+.modal-close-button:focus{
+  border:1px solid $primary-accent-color;
+}
+
 .modal-label {
   margin-bottom: 2px;
   font-weight: 500;
@@ -114,7 +119,7 @@ input:not(:placeholder-shown) {
   font-weight: 500;
   font-size: 11px;
   line-height: 1.36;
-  color: #ff705d;
+  color: $form-invalid;
   display: flex;
   display: none;
   margin-bottom: 9px;
@@ -122,21 +127,21 @@ input:not(:placeholder-shown) {
   align-items: center;
 }
 input:invalid:not(:placeholder-shown) {
-  border: 1px solid #ff705d;
+  border: 1px solid $form-invalid;
   margin-bottom: 0;
 }
 input:invalid:not(:placeholder-shown) + .form-error {
   display: flex;
 }
 .input:required ~ .submit-btn {
-  border: 1px solid #ff705d;
+  border: 1px solid $form-invalid;
   background-color: $background-white;
 }
 .warn-text {
   font-weight: 500;
   font-size: 11px;
   line-height: 1.36;
-  color: #ff705d;
+  color: $form-invalid;
   margin-left: 4px;
 }
 .submit-btn {
