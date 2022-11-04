@@ -167,7 +167,7 @@ border:2px solid #FF705D;
 background-color: $background-white;
 }
 
-input:required:not(:placeholder-shown) {
+input:required:placeholder-shown{
   border: 1px solid #FF705D;
   margin-bottom: 0;
 }
