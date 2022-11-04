@@ -288,6 +288,12 @@
 
         color: $text-color;
 
+        @media screen and (min-width:768px) {
+                font-size: 12px;
+                line-height: 1.17;
+        
+            }
+
 
     }
 
@@ -300,6 +306,12 @@
         color: $secondary-accent-color;
 
         transition: color 250ms linear;
+
+        @media screen and (min-width:768px) {
+                font-size: 12px;
+                line-height: 1.17;
+        
+            }
 
         &:hover,
         &:focus {
@@ -338,6 +350,12 @@
 
         transition: color 250ms linear;
 
+        @media screen and (min-width:768px) {
+                font-size: 12px;
+                line-height: 1.17;
+        
+            }
+
         &:hover,
         &:focus {
             color: $shadow-fruit;
@@ -354,6 +372,12 @@
     line-height: 1.21;
 
     text-align: center;
+
+    @media screen and (min-width:768px) {
+            font-size: 12px;
+            line-height: 1.17;
+    
+        }
 }
 
 .footer-down {

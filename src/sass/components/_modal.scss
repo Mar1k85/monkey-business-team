@@ -1,12 +1,13 @@
 .backdrop {
-    width: 100%;
-    height: 100vh;
-    background: $backdrop-color;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    position: fixed;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  width: 100%;
+  height: 100vh;
+  background: $backdrop-color;
+  opacity: 1;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  position: fixed;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
@@ -30,77 +31,74 @@
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-} 
-.modal-close-button{
-    position: absolute;
-    right: 16px;
-    top:16px;
-    width: 32px;
-    height: 32px;
-    background: $modal-form-background;
-    color: $text-color;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: none;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
-
+  opacity: 0;
+  pointer-events: none;
 }
-.modal-label{
-    margin-bottom: 2px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.37;
-    color:$text-color;
-    margin-left: 12px;
-    }
+.modal-close-button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  background: $modal-form-background;
+  color: $text-color;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+}
+.modal-label {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.37;
+  color: $text-color;
+  margin-left: 12px;
+}
 .modal-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.20;
-    color:$text-color ;
-    margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $text-color;
+  margin-bottom: 20px;
 }
-.form-element{
-    display: flex;
-    flex-direction: column;
-
+.form-element {
+  display: flex;
+  flex-direction: column;
 }
 input::placeholder {
-    color:$modal-form-text;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-       }
-.form-element input{
-    width: 100%;
-    padding-top: 14px;
-padding-bottom: 14px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    color:$text-color;
-    margin-bottom: 24px;
-    border: none;
-    border: 1px solid $secondary-accent-color;
-    padding-left: 12px;
-    outline: none;
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-    @include tablet{
-    border: 1px solid  rgba(18, 18, 18, 0.12)
-    }
+  color: $modal-form-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.form-element input {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $text-color;
+  margin-bottom: 24px;
+  border: none;
+  border: 1px solid $secondary-accent-color;
+  padding-left: 12px;
+  outline: none;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  @include tablet {
+    border: 1px solid rgba(18, 18, 18, 0.12);
+  }
 }
 input:not(:placeholder-shown) {
   border: 1px solid $secondary-accent-color;
 }
-.form-element input:focus{
-    border: 1px solid $secondary-accent-color;
-
+.form-element input:focus {
+  border: 1px solid $secondary-accent-color;
 
   border: none;
   border: 1px solid $secondary-accent-color;
@@ -115,53 +113,48 @@ input:not(:placeholder-shown) {
   border: 1px solid $secondary-accent-color;
 }
 .form-error {
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 1.36;
-    color: #FF705D;
-    display: flex;
-    display: none;
-    margin-bottom: 9px;
-    margin-left: 12px;
-    align-items: center;
-    }
-    input:invalid:not(:placeholder-shown) {
-        border: 1px solid #FF705D;
-        margin-bottom: 0;
-      }
-      input:invalid:not(:placeholder-shown) + .form-error {
-        display: flex;
-          }
-            .input:required ~.submit-btn {
-        border: 1px solid #FF705D;
-        background-color: $background-white;
-      }
-          .warn-text{
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 1.36;
-    color: #FF705D;
-    margin-left: 4px;
-          }
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #ff705d;
+  display: flex;
+  display: none;
+  margin-bottom: 9px;
+  margin-left: 12px;
+  align-items: center;
+}
+input:invalid:not(:placeholder-shown) {
+  border: 1px solid #ff705d;
+  margin-bottom: 0;
+}
+input:invalid:not(:placeholder-shown) + .form-error {
+  display: flex;
+}
+.input:required ~ .submit-btn {
+  border: 1px solid #ff705d;
+  background-color: $background-white;
+}
+.warn-text {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #ff705d;
+  margin-left: 4px;
+}
 .submit-btn {
-display: block;
-margin: 0 auto;
-padding: 10px 38px;
-border-radius: 30px;
-border: 2px solid $secondary-accent-color;
-background-color: $modal-form-background;
-font-weight: 500;
-font-size: 13px;
-line-height: 1.53;
-color: $text-color;
-transition: background-color 250ms linear;}
+  display: block;
+  margin: 0 auto;
+  padding: 10px 38px;
+  border-radius: 30px;
+  border: 2px solid $secondary-accent-color;
+  background-color: $modal-form-background;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53;
+  color: $text-color;
+  transition: background-color 250ms linear;
+}
 
-
-
-/*.submit-btn:hover,
-.submit-btn:focus {
-  background-color: $primary-accent-color;
-}*/
 input:invalid:not(:placeholder-shown) ~.submit-btn {
 border:2px solid #FF705D;
 background-color: $background-white;
@@ -178,5 +171,3 @@ input:valid:not(:placeholder-shown) ~.submit-btn:hover,
   border:2px solid $secondary-accent-color;
   background-color: $primary-accent-color;
   }
-
-
