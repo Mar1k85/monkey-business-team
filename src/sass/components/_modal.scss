@@ -167,6 +167,7 @@ border:2px solid #FF705D;
 background-color: $background-white;
 }
 
-input:required:placeholder-shown ~ .submit-btn {
+input::required {
   border:2px solid #FF705D;
+background-color: $background-white;
 }
