@@ -81,6 +81,11 @@
   }
 }
 
+.subscribe__form {
+  display: flex;
+  align-items: flex-start;
+}
+
 .subscribe__input {
   display: block;
   width: 279px;
@@ -109,14 +114,6 @@
     border: 0.85px solid $secondary-accent-color;
   }
 
-  &:focus:valid {
-    border: 0.85px solid $secondary-accent-color;
-  }
-
-  &:invalid {
-    border: 0.85px solid $form-invalid;
-  }
-
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
@@ -134,6 +131,35 @@
 .subscribe__input:-webkit-autofill {
   -webkit-text-fill-color: $text-color;
   box-shadow: 0 0 0 100px $modal-form-background inset;
+}
+
+.subscribe__form-error {
+  display: none;
+  align-items: center;
+}
+
+.subscribe__input:focus:not(:placeholder-shown) {
+  border: 0.85px solid $secondary-accent-color;
+}
+
+.subscribe__input:invalid:not(:placeholder-shown) {
+  border: 0.85px solid $form-invalid;
+  margin-bottom: 4px;
+}
+
+.subscribe__input:invalid:not(:placeholder-shown) + .subscribe__form-error {
+  display: flex;
+}
+
+.subscribe__warn {
+  margin-right: 4px;
+}
+
+.subscribe__warn-text {
+  font-weight: inherit;
+  font-size: 10px;
+  line-height: 1.5;
+  color: $form-invalid;
 }
 
 .button--subscribe {
