@@ -167,7 +167,7 @@ border:2px solid #FF705D;
 background-color: $background-white;
 }
 
-input::required {
-  border:2px solid #FF705D;
+input:valid:placeholder-shown{
+  border:2px solid $secondary-accent-color;
 background-color: $background-white;
 }
