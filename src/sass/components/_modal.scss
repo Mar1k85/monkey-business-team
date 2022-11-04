@@ -54,6 +54,7 @@
 .modal-close-button:hover,
 .modal-close-button:focus{
   border:1px solid $primary-accent-color;
+  outline: none;
 }
 
 .modal-label {
