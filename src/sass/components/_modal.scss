@@ -97,7 +97,9 @@ input::placeholder {
 input:not(:placeholder-shown) {
   border: 1px solid $secondary-accent-color;
 }
+.form-element input:hover,
 .form-element input:focus {
+
   border: 1px solid $secondary-accent-color;
 
   border: none;
@@ -105,13 +107,9 @@ input:not(:placeholder-shown) {
   padding-left: 12px;
   outline: none;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-  @include tablet {
-    border: 1px solid rgba(18, 18, 18, 0.12);
-  }
+  
 }
-.form-element input:focus {
-  border: 1px solid $secondary-accent-color;
-}
+
 .form-error {
   font-weight: 500;
   font-size: 11px;
