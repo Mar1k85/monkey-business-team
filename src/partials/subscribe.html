@@ -19,12 +19,25 @@
         varius enim in eros elementum tristique.
       </p>
       <form class="subscribe__form">
-        <input
+        <div class="subscribe__wrap">
+          <input
           class="subscribe__input"
           type="email"
           name="email"
           placeholder="Enter your email"
+          pattern="^\S+@\S+\.\S+$"
+          autocomplete
         />
+        <div class="subscribe__form-error">
+          <svg class="subscribe__warn" viewBox="0 0 32 32"
+          width="12"
+          height="12"
+        >
+        <use href="./images/icons.svg#icon-Frame"></use>
+      </svg>
+        <b class="subscribe__warn-text">Not a valid email address (example@email.com)</b>
+      </div>
+        </div>
         <button class="button--subscribe" type="submit">Subscribe</button>
       </form>
     </div>
