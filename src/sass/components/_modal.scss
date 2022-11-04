@@ -100,9 +100,9 @@ input::placeholder {
     border: 1px solid rgba(18, 18, 18, 0.12);
   }
 }
-/*input:not(:placeholder-shown) {
+input:not(:placeholder-shown) {
   border: 1px solid $secondary-accent-color;
-}*/
+}
 .form-element input:hover,
 .form-element input:focus {
 
@@ -160,13 +160,13 @@ input:invalid:not(:placeholder-shown) + .form-error {
 }
 
 input:invalid:not(:placeholder-shown) ~.submit-btn {
-border:2px solid #FF705D;
+border:2px solid $form-invalid;
 background-color: $background-white;
 }
 
 input:required:placeholder-shown ~.submit-btn:hover,
 .submit-btn:focus{
-  border: 1px solid #FF705D;
+  border: 1px solid $form-invalid;
   background-color: $background-white;
 
 }
