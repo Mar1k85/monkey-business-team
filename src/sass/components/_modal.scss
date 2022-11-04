@@ -97,6 +97,7 @@ input::placeholder {
   padding-left: 12px;
   outline: none;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: border 250ms linear;
   
   @include tablet {
     border: 1px solid rgba(18, 18, 18, 0.12);
@@ -157,7 +158,7 @@ input:invalid:not(:placeholder-shown) + .form-error {
   font-size: 13px;
   line-height: 1.53;
   color: $text-color;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms linear, border 250ms linear ;
   cursor: pointer;
 }
 
