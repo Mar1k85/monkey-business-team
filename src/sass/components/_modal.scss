@@ -173,9 +173,9 @@ input:required:placeholder-shown ~.submit-btn:hover,
   background-color: $background-white;
 
 }
-/*.submit-btn:focus,
-.submit-btn:hover ~ .input:required{
+.submit-btn:focus,
+.submit-btn:hover +.input:required{
   border: 1px solid #FF705D;
   background-color: $background-white;
 
-}*/
+}
