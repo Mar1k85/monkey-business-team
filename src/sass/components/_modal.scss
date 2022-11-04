@@ -158,10 +158,10 @@ transition: background-color 250ms linear;}
 
 
 
-.submit-btn:hover,
+/*.submit-btn:hover,
 .submit-btn:focus {
   background-color: $primary-accent-color;
-}
+}*/
 input:invalid:not(:placeholder-shown) ~.submit-btn {
 border:2px solid #FF705D;
 background-color: $background-white;
@@ -173,10 +173,10 @@ input:required:placeholder-shown ~.submit-btn:hover,
   background-color: $background-white;
 
 }
-.submit-btn:focus,
-.submit-btn:hover input:required{
-  border: 1px solid #FF705D;
-  background-color: $background-white;
+input:valid:not(:placeholder-shown) ~.submit-btn:hover,
+.submit-btn:focus {
+  border:2px solid $secondary-accent-color;
+  background-color: $primary-accent-color;
+  }
 
-}
 
