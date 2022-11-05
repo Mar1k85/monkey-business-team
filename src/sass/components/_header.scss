@@ -86,9 +86,14 @@
     display: none;
   }
 
+  fill: $secondary-accent-color;
   border: none;
   background-color: transparent;
   transition: fill 250ms linear;
+  
+  &:focus {
+    fill: $main-color;
+  }
 }
 
 
