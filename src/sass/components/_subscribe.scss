@@ -184,4 +184,10 @@
   &:focus {
     background-color: $button-hover-color;
   }
+
+  &:active {
+    @media screen and (max-width: 767px) {
+      background-color: $button-hover-color;
+    }
+  }
 }
