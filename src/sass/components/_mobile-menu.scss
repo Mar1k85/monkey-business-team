@@ -22,15 +22,26 @@
   font-size: 16px;
   line-height: 19px;
   color: $nav-text;
-
  
 }
+
 .mobile-menu__item {
   padding: 14px;
+
+  transition: background-color 250ms linear;
+  
+    &:first-child {
+      border-radius: 30px 0px 0px 0px;
+    }
+  
+    &:last-child {
+      border-radius: 0px 0px 30px 30px;
+    }
 
   &:active {
     background-color: $primary-accent-color;
   }
+
 }
 
 .mobile-menu__list {
